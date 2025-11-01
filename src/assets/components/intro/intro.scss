@@ -1,0 +1,26 @@
+.intro{
+    background: url(../../images/mobile/image-header.jpg) no-repeat;
+    background-size: cover;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+
+        &-title{
+            color: white;
+            font-family: "fraunces", sans-serif;
+            font-weight: 900;
+            font-size: 2.3rem;
+            letter-spacing: 8px;
+            text-align: center;
+        }
+    }
+}
