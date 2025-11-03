@@ -1,3 +1,15 @@
+@keyframes upDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px); 
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .intro{
     background: url(../../images/mobile/image-header.jpg) no-repeat;
     background-size: cover;
@@ -6,6 +18,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-position: bottom;
+    
+
+    @media screen and (min-width:500px) {
+        background: url(../../images/desktop/image-header.jpg) no-repeat;
+        background-position: bottom;
+        background-size: contain;
+        height: 650px;
+        background-color: #3EBFFF;
+    }
 
     &__content{
         display: flex;
@@ -14,6 +36,10 @@
         align-items: center;
         gap: 3rem;
 
+        @media screen and (min-width:768px){
+            transform: translateY(-2.5rem);
+        }
+
         &-title{
             color: white;
             font-family: "fraunces", sans-serif;
@@ -21,6 +47,11 @@
             font-size: 2.3rem;
             letter-spacing: 8px;
             text-align: center;
+        }
+
+        &-arrow{
+            animation: upDown 1.2s ease-in-out infinite;
+            scale: 0.8;
         }
     }
 }

@@ -1,0 +1,62 @@
+.testimonials{
+    padding: 1.5rem;
+    text-align: center;
+
+    &__title{
+        font-family: "fraunces", sans-serif;
+        font-size: 0.9rem;
+        letter-spacing: 3px;
+        margin-top: 2rem;
+        color: hsl(232, 10%, 55%);
+    }
+
+    &__gallery{
+
+        @media screen and (min-width:768px){
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 1020px;
+            margin: auto;
+        }
+    }
+}
+
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 3.5rem auto;
+    max-width: 400px;
+
+    &__image{
+        border-radius: 9999px;
+        max-width: 75px;
+    }
+
+    &__text{
+        margin: 1.5rem 0;
+        line-height: 2rem;
+        font-weight: 600;
+        color: hsla(211, 28%, 19%, 0.719);
+        flex: 1;
+
+        @media screen and (min-width:768px){
+            font-size: 0.9rem;
+            line-height: 1.35rem;
+        }
+    }
+
+    &__job{
+        padding: 0.5rem;
+        font-size: 0.8rem;
+        color: hsl(232, 10%, 55%);
+    }
+
+    &__name{
+        font-weight: 900;
+        font-family: "fraunces", sans-serif;
+        color: hsl(212, 27%, 19%);
+    }
+}

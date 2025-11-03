@@ -11,10 +11,18 @@
         position: relative;
         padding: 2rem 1.5rem;
         width: 100%;
+
+        @media screen and (min-width:768px){
+            padding: 2rem;
+        }
     }
 
     &__nav{
         display: none;
+
+        @media screen and (min-width:768px){
+            display: block;
+        }
 
         &--active{
             display: flex;
@@ -35,6 +43,14 @@
             gap: 2rem;
             align-items: center;
             position: relative;
+            z-index: 50;
+
+            @media screen and (min-width:768px){
+                flex-direction: row;
+                gap: 3rem;
+                background: none;
+                padding: 0;
+            }
 
             &::before{
                 content: "";
@@ -45,6 +61,10 @@
                 top: -20px;
                 right: 0;
                 background: linear-gradient(135deg, #ffffff00 50%, #ffffff 50%);
+
+                @media screen and (min-width:768px){
+                    display: none;
+                }
             }
         }
 
@@ -54,15 +74,32 @@
             color: hsl(232, 10%, 55%);
             font-weight: 600;
 
+            @media screen and (min-width:768px){
+                color: white;
+                font-weight: 400;
+            }
+
             &--contact{
-                padding: 1rem 1.8rem;
+                padding: 1rem 1.5rem;
                 text-decoration: none;
                 font-family: "fraunces", sans-serif;
                 font-weight: 700;
                 font-size: 0.8rem;
-                color: black;
+                color: hsl(212, 27%, 19%);
                 background: hsl(51, 100%, 49%);
                 border-radius: 9999px;
+
+                @media screen and (min-width:768px){
+                    background: white;
+                }
+
+                &:hover{
+                    
+                    @media screen and (min-width:768px){
+                        color: white;
+                        background-color: rgba(255, 255, 255, 0.295);
+                    }
+                }
             }
         }
     }
@@ -71,6 +108,10 @@
         background: none;
         border: none;
         padding: 0;
+
+        @media screen and (min-width:768px){
+            display: none;
+        }
 
         &-image{
 
