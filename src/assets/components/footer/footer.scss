@@ -26,6 +26,10 @@
             text-decoration: none;
             font-weight: 600;
             font-size: 0.9rem;
+
+            &:hover{
+                color: white;
+            }
         }
     }
     
@@ -35,6 +39,10 @@
 
         img{
             width: 18px;
+
+            &:hover{
+                filter: brightness(100);
+            }
         }
     }
 }

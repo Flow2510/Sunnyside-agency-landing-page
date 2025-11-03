@@ -90,6 +90,10 @@
                 z-index: -1;
                 border-radius: 999px;
             }
+
+            &:hover::after{
+                background: hsla(7, 99%, 70%);
+            }
         }
     }
 }
@@ -126,6 +130,10 @@
                 background: hsl(51, 100%, 49%, 0.2);
                 z-index: -1;
                 border-radius: 999px;
+            }
+
+            &:hover::after{
+                background: hsl(51, 100%, 49%);
             }
         }
     }
